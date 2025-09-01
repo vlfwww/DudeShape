@@ -1,0 +1,299 @@
+.MAIN {
+  margin: 0 auto;
+  .mainWrapper {
+    & main {
+      & .preview {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        & .right {
+          background-color: rgba(21, 68, 68, 1);
+          padding: 110px 0 108px 100px;
+          max-height: 560px;
+          & h1 {
+            font: 700 56px "Montserrat";
+            color: rgba(255, 255, 255, 1);
+          }
+          & p {
+            color: rgba(255, 255, 255, 1);
+            font: 400 24px "DM Sans";
+            max-width: 500px;
+            margin: 20px 0 35px;
+          }
+          & button {
+            font: 400 20px "DM Sans";
+            color: rgba(21, 68, 68, 1);
+            background-color: rgba(255, 255, 255, 1);
+            padding: 15px 25px;
+            border: none;
+          }
+        }
+      }
+      & .partners {
+        max-width: 1200px;
+        margin: 140px auto;
+        text-align: center;
+        & p {
+          font: 700 32px "DM Sans";
+          color: rgba(36, 77, 77, 1);
+          margin-bottom: 40px;
+        }
+      }
+      & .about {
+        margin: 140px auto;
+        display: flex;
+        max-width: 1200px;
+
+        justify-content: space-between;
+        align-items: center;
+        & .right {
+          max-width: 436px;
+          & h1 {
+            font: 700 32px "Montserrat";
+            color: rgba(36, 77, 77, 1);
+          }
+          & .additionalInfo {
+            font: 400 20px "DM Sans";
+            color: rgba(68, 68, 68, 1);
+            margin: 20px 0 40px;
+          }
+          & .aboutBlock {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 30px;
+            align-items: start;
+            & .text {
+              & .textTitle {
+                font: 700 20px "Montserrat";
+                color: rgba(36, 77, 77, 1);
+                margin-bottom: 14px;
+              }
+              & .textDescription {
+                font: 400 18px "DM Sans";
+                color: rgba(56, 55, 56, 1);
+              }
+            }
+          }
+        }
+      }
+      & .popular {
+        margin: 140px auto;
+        max-width: 1200px;
+
+        & h1 {
+          font: 700 32px "Montserrat";
+          color: rgba(36, 36, 36, 1);
+          margin: 20px 0;
+        }
+        & .info {
+          display: flex;
+          gap: 280px;
+          margin-bottom: 80px;
+          & p {
+            font: 400 20px "DM Sans";
+            color: rgba(56, 55, 56, 1);
+          }
+          & .slider {
+            display: flex;
+            gap: 16px;
+            & div {
+              background-color: rgba(244, 246, 246, 1);
+              border-radius: 100px;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: rgba(209, 206, 206, 1);
+              font: 700 20px "DM Sans";
+            }
+            & div:hover {
+              color: rgba(102, 102, 102, 1);
+            }
+          }
+        }
+        & .wrapper {
+          display: flex;
+          justify-content: space-between;
+          & .block {
+            box-shadow: 0px 13px 26px 0px rgba(0, 0, 0, 0.07);
+            & .textPopular {
+              background-color: rgba(255, 255, 255, 1);
+              padding: 30px 24px 26px;
+              & .first {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & .title {
+                  font: 500 20px "DM Sans";
+                  color: rgba(36, 36, 36, 1);
+                }
+                & .icons {
+                  display: flex;
+                  gap: 14px;
+                  align-items: start;
+                  & div {
+                    background-color: rgba(244, 246, 246, 1);
+                    border-radius: 100px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgba(209, 206, 206, 1);
+                  }
+                }
+              }
+              & .second {
+                display: flex;
+                margin-top: 21px;
+                justify-content: space-between;
+                align-items: center;
+                & .price {
+                  font: 500 24px "DM Sans";
+                  color: rgba(36, 36, 36, 1);
+                }
+                & button {
+                  background-color: rgba(36, 77, 77, 1);
+                  color: rgba(255, 255, 255, 1);
+                  padding: 5px 15px;
+                  font: 500 12px "DM Sans";
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      & .furniture {
+        margin: 140px auto;
+        max-width: 1200px;
+        text-align: center;
+        & h1 {
+          color: rgba(36, 36, 36, 1);
+          font: 700 32px "Montserrat";
+        }
+        & .types {
+          max-width: 720px;
+          display: flex;
+          margin: 20px auto 80px;
+          justify-content: space-between;
+          & p {
+            font: 400 24px "DM Sans";
+            color: rgba(145, 144, 144, 1);
+          }
+          & p:hover {
+            color: rgba(21, 68, 68, 1);
+            border-bottom: solid 2px rgba(21, 68, 68, 1);
+          }
+        }
+        & .wrapper {
+          display: flex;
+          justify-content: space-between;
+          & .right {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+            & .block,
+            .block1 {
+              border: 1.5px solid rgba(217, 220, 229, 1);
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 14px;
+              padding: 16px 66px;
+              & p {
+                font: 500 16px "DM Sans";
+                color: rgba(128, 128, 128, 1);
+              }
+            }
+            & .block1 {
+              background-color: rgba(21, 68, 68, 1);
+              & p {
+                color: rgba(255, 255, 255, 1);
+              }
+            }
+          }
+        }
+      }
+      & .review {
+        margin: 140px auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .right {
+            max-width: 535px;
+          & h1 {
+            font: 700 32px "Montserrat";
+            color: rgba(36, 36, 36, 1);
+          }
+          & .addition {
+            font: 400 20px "DM Sans";
+            color: rgba(56, 55, 56, 1);
+            margin: 20px 0 40px;
+          }
+          & .rew {
+            display: flex;
+            gap: 4px;
+            & .block {
+              & .name {
+                font: 500 16px "DM Sans";
+                color: rgba(0, 0, 0, 1);
+              }
+              & .star {
+                display: flex;
+                justify-content: flex-start;
+                gap:1px;
+                & p {
+                  font: 500 14px "DM Sans";
+                  color: rgba(0, 0, 0, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+      & .subscr{
+        background-color: rgba(244, 246, 246, 1);
+        margin: 140px auto;
+        max-width: 1200px;
+        padding: 68px 0 55px;
+        text-align: center;
+        & h1{
+            font: 700 32px 'Montserrat';
+            color: rgba(34, 34, 34, 1);
+        }
+        & p{
+            font:400 16px 'DM Sans';
+            margin: 20px 0 40px;
+            color: rgba(34, 34, 34, 1);
+        }
+        & .form{
+            display: flex;
+            width: 471px;
+            margin: 0 auto;
+            padding: 7px 0;
+            background-color: rgba(255, 255, 255, 1);
+            & input{
+                border: none;
+                width: 330px;
+                padding-left: 10px;
+                font: 400 16px 'DM Sans';
+                color: rgba(186, 186, 186, 1);
+            }
+            & button{
+                border: none;
+                background-color: rgba(48, 95, 100, 1);
+                font: 500 16px 'DM Sans';
+                color: rgba(255, 255, 255, 1);
+                padding: 15px 30px;
+            }
+        }
+      }
+    }
+  }
+}

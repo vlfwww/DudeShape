@@ -1,0 +1,27 @@
+.wrapper{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 44px auto;
+    & h1{
+        color: rgba(36, 77, 77, 1);
+        font:700 24px 'Montserrat';
+    }
+    & .center{
+        display: flex;
+        gap:50px;
+        & p{
+            font:400 16px 'DM Sans';
+            color: rgba(22, 22, 22, 1);
+        }
+    }
+    & .left{
+        display: flex;
+        gap:30px;
+        & img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
