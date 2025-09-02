@@ -44,7 +44,6 @@
         margin: 140px auto;
         display: flex;
         max-width: 1200px;
-
         justify-content: space-between;
         align-items: center;
         & .right {
@@ -226,7 +225,7 @@
         justify-content: space-between;
         align-items: center;
         & .right {
-            max-width: 535px;
+          max-width: 535px;
           & h1 {
             font: 700 32px "Montserrat";
             color: rgba(36, 36, 36, 1);
@@ -247,7 +246,7 @@
               & .star {
                 display: flex;
                 justify-content: flex-start;
-                gap:1px;
+                gap: 1px;
                 & p {
                   font: 500 14px "DM Sans";
                   color: rgba(0, 0, 0, 1);
@@ -257,41 +256,344 @@
           }
         }
       }
-      & .subscr{
+      & .subscr {
         background-color: rgba(244, 246, 246, 1);
         margin: 140px auto;
         max-width: 1200px;
         padding: 68px 0 55px;
         text-align: center;
-        & h1{
-            font: 700 32px 'Montserrat';
-            color: rgba(34, 34, 34, 1);
+        & h1 {
+          font: 700 32px "Montserrat";
+          color: rgba(34, 34, 34, 1);
         }
-        & p{
-            font:400 16px 'DM Sans';
-            margin: 20px 0 40px;
-            color: rgba(34, 34, 34, 1);
+        & p {
+          font: 400 16px "DM Sans";
+          margin: 20px 0 40px;
+          color: rgba(34, 34, 34, 1);
+        }
+        & .form {
+          display: flex;
+          width: 471px;
+          margin: 0 auto;
+          padding: 7px 0;
+          background-color: rgba(255, 255, 255, 1);
+          & input {
+            border: none;
+            width: 330px;
+            padding-left: 10px;
+            font: 400 16px "DM Sans";
+            color: rgba(186, 186, 186, 1);
+          }
+          & button {
+            border: none;
+            background-color: rgba(48, 95, 100, 1);
+            font: 500 16px "DM Sans";
+            color: rgba(255, 255, 255, 1);
+            padding: 15px 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1227px) {
+  .MAIN .mainWrapper main {
+    & .about {
+      display: flex;
+      justify-content: space-around;
+      & .left img {
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
+    & .popular {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & .wrapper {
+        display: flex;
+        justify-content: space-around;
+        & .block {
+          & img {
+            width: 300px;
+          }
+          & .textPopular .first {
+            & p.title {
+              font-size: 15px;
+            }
+            & .icons img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+      }
+    }
+    & .furniture {
+      & .wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & .left img {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1092px) {
+  .MAIN .mainWrapper {
+    & main {
+      & .preview {
+        display: flex;
+        justify-content: center;
+        & .left img {
+          width: 363px;
+        }
+        & .right {
+          max-width: 500px;
+          & h1 {
+            font-size: 30px;
+            & p {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      & .review {
+        display: flex;
+        justify-content: space-around;
+        & .reviewImg {
+          width: 400px;
+        }
+      }
+      & .partners {
+        overflow: hidden;
+        & img {
+          overflow: hidden;
+        }
+      }
+      & .preview,
+      .partners,
+      .about,
+      .popular,
+      .furniture,
+      .review,
+      .subscr {
+        margin: 50px auto;
+      }
+      & .subscr {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 955px) {
+  .MAIN .mainWrapper {
+    & main {
+      & .preview {
+        display: flex;
+        justify-content: center;
+        & .left img {
+          width: 278px;
+        }
+        & .right {
+          max-width: 345px;
+          padding: 30px;
+          & h1 {
+            font-size: 20px;
+            & p {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      & .popular {
+        & .wrapper {
+          & .block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            & img {
+              width: 240px;
+              text-align: center;
+              margin: 0 auto;
+            }
+            & .textPopular .first {
+              & p.title {
+                font-size: 15px;
+                margin-right: 5px;
+              }
+              & .icons {
+                & div {
+                  width: 20px;
+                  height: 20px;
+                }
+                & img {
+                  width: 10px;
+                  height: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      & .review {
+        & .right {
+          max-width: 350px;
+          & h1 {
+            font-size: 20px;
+          }
+          & .addition {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 857px) {
+  .MAIN .mainWrapper {
+    & main {
+      & .popular {
+        & h1 {
+          text-align: center;
+        }
+        & .info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .MAIN .mainWrapper {
+    & main {
+      & .preview {
+        margin: 0 auto;
+      }
+      & .about {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        & .left img {
+          width: 80%;
+          display: flex;
+          justify-content: center;
+        }
+        & .right {
+          max-width: fit-content;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & .additionalInfo {
+            text-align: center;
+          }
+        }
+      }
+      & .popular {
+        & .info {
+          & .slider {
+            display: none;
+          }
+        }
+        & .wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 15px;
+          & .block {
+            margin: 0 auto;
+            width: 100%;
+            & .popular2 {
+              width: 300px;
+            }
+          }
+        }
+      }
+      & .furniture {
+        & .types {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+          margin: 10px auto;
+        }
+        & .wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & .left img {
+            width: 80%;
+          }
+        }
+      }
+      & .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .MAIN .mainWrapper {
+    & main {
+      & .preview {
+        & .left {
+          display: none;
+        }
+        & .right {
+          text-align: center;
+          & button {
+            font-size: 15px;
+          }
+        }
+      }
+      & .about{
+         & .right{
+          margin: 10px;
+         }
+      }
+    }
+  }
+}
+@media (max-width: 490px) {
+  .MAIN .mainWrapper {
+    & main {
+      & .subscr{
+        & h1{
+          font-size: 20px;
         }
         & .form{
-            display: flex;
-            width: 471px;
-            margin: 0 auto;
-            padding: 7px 0;
-            background-color: rgba(255, 255, 255, 1);
-            & input{
-                border: none;
-                width: 330px;
-                padding-left: 10px;
-                font: 400 16px 'DM Sans';
-                color: rgba(186, 186, 186, 1);
+          width: 320px;
+        }
+      }
+      & .furniture{
+        & .wrapper{
+          & .right{
+            gap:10px;
+            margin: 10px;
+            & .block{
+              padding: 16px 26px;
             }
-            & button{
-                border: none;
-                background-color: rgba(48, 95, 100, 1);
-                font: 500 16px 'DM Sans';
-                color: rgba(255, 255, 255, 1);
-                padding: 15px 30px;
-            }
+          }
+        }
+      }
+      & .review .reviewImg{
+        width: 300px;
+      }
+      & .about, .popular{
+        margin: 0 auto;
+        & h1{
+          margin-top: 0;
         }
       }
     }

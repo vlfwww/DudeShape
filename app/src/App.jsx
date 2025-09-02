@@ -1,5 +1,6 @@
 import style from './style.module.css'
 import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
 import previewImg from '../public/previewImg.png'
 import trusted from '../public/trusted.png'
 import aboutImg from '../public/aboutImg.png'
@@ -84,7 +85,7 @@ function App() {
           </div>
           <div className={style.wrapper}>
             <div className={style.block}>
-              <img src={popular1} alt='popular1'/>
+              <img src={popular1} alt='popular1' className={style.popular2}/>
               <div className={style.textPopular}>
                  <div className={style.first}>
                 <p className={style.title}>White Swan Chair </p>
@@ -100,7 +101,7 @@ function App() {
               </div>
             </div>
              <div className={style.block}>
-              <img src={popular2} alt='popular2'/>
+              <img src={popular2} alt='popular2' className={style.popular2}/>
               <div className={style.textPopular}>
                  <div className={style.first}>
                 <p className={style.title}>White Swan Chair </p>
@@ -116,7 +117,7 @@ function App() {
               </div>
             </div>
              <div className={style.block}>
-              <img src={popular3} alt='popular3'/>
+              <img src={popular3} alt='popular3'className={style.popular2}/>
                <div className={style.textPopular}>
                  <div className={style.first}>
                 <p className={style.title}>White Swan Chair </p>
@@ -173,7 +174,7 @@ function App() {
           </div>
         </section>
         <section className={style.review}>
-          <img src={reviewImg} alt='reviewImg'/>
+          <img src={reviewImg} alt='reviewImg' className={style.reviewImg}/>
           <div className={style.right}>
             <h1>Our customers are verry importan to us</h1>
             <p className={style.addition}>All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials and choices for our customers.</p>
@@ -198,6 +199,7 @@ function App() {
           </div>
         </section>
        </main>
+       <Footer/>
     </div>
     </div>
   )
